@@ -62,8 +62,32 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/m
 This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
 
 ### Deployment
+To deploy your app on GitHub Pages:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Install the `gh-pages` package if not already installed:
+    ```bash
+    npm install --save gh-pages
+    ```
+
+2. Add the following properties to your `package.json`:
+    ```json
+    "homepage": "https://<your-github-username>.github.io/<your-repo-name>"
+    ```
+
+3. Add deploy scripts to `package.json`:
+    ```json
+    "scripts": {
+      "predeploy": "npm run build",
+      "deploy": "gh-pages -d build"
+    }
+    ```
+
+4. Run the deploy command:
+    ```bash
+    npm run deploy
+    ```
+
+Your app will be published at the URL specified in the `homepage` field.
 
 ### `npm run build` fails to minify
 
