@@ -30,7 +30,7 @@ const skills = [
   },
   {
     name: "Kubernetes",
-    iconClass: "fa-brands fa-jenkins"
+    iconClass: "fa-brands fa-gears"
   },
   {
     name: "Cloud",

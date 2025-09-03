@@ -8,7 +8,7 @@ function WorkExperience() {
     >
       <div>
         <h1 className="gold text-center uppercase">
-          Work Experience <i className="fas fa-light fa-briefcase"></i>
+          Work History <i className="fas fa-light fa-briefcase"></i>
         </h1>
 
         <div className="pt-md-4">
